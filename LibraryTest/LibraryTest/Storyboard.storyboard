@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hello View-->
+        <scene sceneID="aSr-gc-yHD">
+            <objects>
+                <viewController storyboardIdentifier="HelloView" id="gmd-tZ-DW1" customClass="HelloView" customModule="LibraryTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ezw-3R-mps"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZSK-Ig-7xJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="16h-5i-6jG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8z-Br-eYc">
+                                <rect key="frame" x="241" y="91" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Xe4-Tb-BUh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAo-51-eMk">
+                                <rect key="frame" x="66" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f8z-Br-eYc" firstAttribute="leading" secondItem="16h-5i-6jG" secondAttribute="leading" constant="241" id="VHp-uk-gWa"/>
+                            <constraint firstItem="iAo-51-eMk" firstAttribute="leading" secondItem="16h-5i-6jG" secondAttribute="leadingMargin" constant="46" id="whg-iD-wAa"/>
+                            <constraint firstItem="f8z-Br-eYc" firstAttribute="top" secondItem="ezw-3R-mps" secondAttribute="bottom" constant="71" id="x5s-cy-r4S"/>
+                            <constraint firstItem="iAo-51-eMk" firstAttribute="top" secondItem="ezw-3R-mps" secondAttribute="bottom" id="yLd-XG-WWG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EPW-Fd-QsE"/>
+                    <connections>
+                        <outlet property="lbl" destination="iAo-51-eMk" id="cT0-fa-2eM"/>
+                        <outlet property="text" destination="f8z-Br-eYc" id="ChI-cI-rfd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHx-9Z-kWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489" y="384"/>
+        </scene>
+    </scenes>
+</document>
